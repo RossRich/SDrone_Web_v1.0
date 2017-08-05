@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height = device-height, width = device-width, initial-scale=1, user-scalable=no" />
+    <title>Отладка</title>
+    <script src="script/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="webiopi.js"></script>
+    <script type="text/javascript" src="/script/debug_js.js"></script>
+    <!--<script src="script/prefixfree.min.js"></script>-->
+    <link type="text/css" rel="stylesheet" href="/css/debug_css.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+
+<body class="main">
+    <div class="out">
+        <table class="table">
+            <caption id="table_debug_caption">
+            </caption>
+            <tr>
+                <td>
+                    <output id="out_p" for="p_term">&nbsp;</output>
+                </td>
+                <td>
+                    <output id="out_i" for="i_term">&nbsp;</output>
+                </td>
+                <td>
+                    <output id="out_d" for="d_term">&nbsp;</output>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <div class="incrimet_dicrimenr_buttou">
+        <button class="but_up_dn_class" type="button" id="inc_but_p" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+        <button class="but_up_dn_class" type="button" id="inc_but_i" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+        <button class="but_up_dn_class" type="button" id="inc_but_d" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+    </div>
+    <div class="control_pid">
+        <input type="range" class="stick" id="p_term" onchange="funRangeChangePID()" oninput="funRangeOutPID(value,id)">
+        <input type="range" class="stick" id="i_term" onchange="funRangeChangePID()" oninput="funRangeOutPID(value,id)">
+        <input type="range" class="stick" id="d_term" onchange="funRangeChangePID()" oninput="funRangeOutPID(value,id)">
+    </div>
+    <div class="incrimet_dicrimenr_buttou">
+        <button class="but_up_dn_class" type="button" id="dic_but_p" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+        <button class="but_up_dn_class" type="button" id="dic_but_i" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+        <button class="but_up_dn_class" type="button" id="dic_but_d" onclick="funDicIncBut(id)">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+    </div>
+    <hr>
+    <div class="asix control_pid">
+        <p class="p_center">ОСЬ:
+            <input type="text" id="input_asix" placeholder="ox/oy" maxlength="2" onInput="funTextAxisChange()">
+        </p>
+        <input name="input_but" disabled type="button" id="input_but" value="выбрать ось" onclick="funSelectAxis()">
+        <hr>
+    </div>
+    <div class="speed_control control_pid ">
+        <input type="range" disabled id="speed_control_range" oninput="funSpeedControl(value)">
+        <output id="out_speed" for="speed_control_range">&nbsp;</output>
+        <hr>
+        </input>
+    </div>
+    <div class="save control_pid">
+        <p class="p_center">
+            <input name="save_but" disabled type="button" id="save_but" value="сохранить" onClick="funClickButSave()"> ПОДТВЕРДИТЬ:
+            <input name="check_save" type="checkbox" id="check_save" onChange="funCheckSave()">
+        </p>
+    </div>
+</body>
+
+</html>

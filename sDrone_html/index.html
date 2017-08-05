@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="height = device-height, width = device-width, initial-scale=1, user-scalable=no"/>
+    <title>НебесныйДрон|SkyDrone</title>
+    <script type="text/javascript" src="/webiopi.js"></script>
+    <script type="text/javascript" src="/script/script.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+        webiopi().ready(init);
+
+    </script>
+    </head>
+    <body>
+    <div id="main">
+      <div id="leftStick">
+        <div id="infoLeft"> </div>
+      </div>
+      <div id="rightStick">
+        <div id="infoRight"> </div>
+      </div>
+      <div id="stop">
+        <div id="leftStop"> </div>
+        <div id="rightStop"> </div>
+      </div>
+<!--
+      <div id="addition">
+        <p>Мотор:
+          <input type="text" id="motorName">
+        </p>
+        <p id="p_for_out_ball"></p>
+      </div>
+-->
+      <div id="info">
+        <input type="button" value="Отладка" onclick="clickDebugButton()"/>
+      </div>
+    </div>
+</body>
+</html>

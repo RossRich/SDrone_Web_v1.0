@@ -1,0 +1,128 @@
+.main {
+    position: relative;
+    /* Абсолютное позиционирование */
+    width: 100%;
+    /* Ширина слоя в пикселах */
+    height: 100%;
+    /* Высота слоя в пикселах */
+    background: #fc0;
+    /* Цвет фона */
+    /*	overflow: auto;  Добавление полосы прокрутки */
+    /*float: left;*/
+    margin: 0px;
+}
+
+.asix {}
+
+#input_asix {
+    display: inline;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #FC0;
+    border: thin dotted #000;
+    border-radius: 5px;
+}
+
+#input_but {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin-bottom: 1%;
+    margin-left: 25%;
+}
+
+.stick {
+    /*	width: 5px;*/
+    height: 350px;
+    padding: 0px 0px;
+}
+
+.p_center {
+    text-align: center;
+}
+
+.control_pid {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+}
+
+.save {}
+
+#p_term {
+    width: 30%;
+    writing-mode: bt-lr;
+    /* IE */
+    -webkit-appearance: slider-vertical;
+    /* WebKit */
+}
+
+#check_save {
+    vertical-align: text-bottom;
+}
+
+#save_but {
+    vertical-align: text-bottom;
+    margin-right: 10%;
+    disabled: true;
+}
+
+#i_term {
+    width: 30%;
+    writing-mode: bt-lr;
+    /* IE */
+    -webkit-appearance: slider-vertical;
+    /* WebKit */
+}
+
+#d_term {
+    width: 30%;
+    writing-mode: bt-lr;
+    /* IE */
+    -webkit-appearance: slider-vertical;
+    /* WebKit */
+}
+
+.out {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.table {
+    width: 100%;
+    border: 0px;
+}
+
+.table td {
+    text-align: center;
+}
+
+#table_debug_caption {
+    padding-bottom: 0px;
+    padding-top: 0px
+}
+
+.speed_control {}
+
+#out_speed {
+    width: 20%;
+    margin-left: 10px;
+}
+
+#speed_control_range {
+    width: 80%;
+}
+
+.incrimet_dicrimenr_buttou {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.but_up_dn_class {
+    width: 30%;
+}

@@ -1,0 +1,29 @@
+var $ctrl =  $(document.createElement("input")).attr({
+                     id:    'topicFilter-'
+                    ,name:  'test'
+                    ,value: 'test'
+                    ,text :'my testing'
+                    ,type:  'checkbox'
+                    ,checked:true
+            })
+
+var lbl =  '<label>Hello world</label>';
+
+
+ $("#renderedControl").append($ctrl.after(lbl));
+
+if(document.getElementById('isAgeSelected').checked) {
+    $("#txtAge").show();
+} else {
+    $("#txtAge").hide();
+}
+
+$('#isAgeSelected').click(function() {
+    $("#txtAge").toggle(this.checked);
+});
+
+if($('#isAgeSelected').prop('checked')) {
+    $("#txtAge").show();
+} else {
+    $("#txtAge").hide();
+}

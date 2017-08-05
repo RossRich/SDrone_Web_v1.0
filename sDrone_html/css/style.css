@@ -1,0 +1,93 @@
+#main{
+    position: relative; /* Абсолютное позиционирование */
+    width: 100%; /* Ширина слоя в пикселах */
+    height: 450px; /* Высота слоя в пикселах */
+    background: #fc0; /* Цвет фона */
+    overflow: auto; /* Добавление полосы прокрутки */
+    float: left;
+}
+#angle{
+    width: 95%;
+    height: 50px;
+    padding: 0px;
+    margin-top: 25%;
+}
+#speed{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0px;
+    margin-left: 25%
+}
+#leftStick{
+     float: left;
+     width: 50%;
+     height: 50%;
+}
+#infoLeft{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: left;
+}
+#infoRight{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: left;
+}
+#rightStick{
+    float:right;
+    width: 50%;
+    height: 50%;
+}
+#addition{
+    float:left;
+    text-align: center;
+    width: 50%;
+    height: 30%;
+}
+#balance{
+    width: 175px;
+    height: 8px;
+    padding: 5 0px;
+}
+#info{
+    float:right;
+    width: 50%;
+    height: 30%;
+}
+#stop{
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+#leftStop{
+    float:left;
+    height:100%;
+    width:50%;
+}
+#rightStop{
+    float:right;
+    height:100%;
+    width:50%;
+}
+#ch_one{
+    width:50%;
+}
+.Default{
+    background-color: RED;
+    height:80%;
+    width:100%;
+    font-size: 9pt;
+    font-weight: normal;
+    border: black 1px solid;
+    padding: 0 0 0 0;
+}
+.motor_label{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+}
+#checkbox_for_info{
+    float: left;
+}
